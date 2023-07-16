@@ -21,9 +21,6 @@ function getTotalPriceWithDiscount(){
     return totalPrice
 }
 
-console.log(getTotalPriceWithDiscount())
-
-
 function addPush(){
     theCart.push(firstProduct);
     console.log("¡Se agregó " + firstProduct.name + " al carrito!");
@@ -34,3 +31,8 @@ function addPush(){
     theCart.push(fourthProduct);
     console.log("¡Se agregó " + fourthProduct.name + " al carrito!");
 }
+
+
+addPush();
+const total = getTotalPriceWithDiscount();
+console.log(total)
