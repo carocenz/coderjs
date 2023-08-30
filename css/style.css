@@ -1,0 +1,23 @@
+#shopper_page {
+    display: none;
+}
+#seller_page {
+    display: none;
+}
+#seller_list{
+    width: 400px;
+}
+.sellerProductBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#products_list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
+#products_list img{
+    width:100px;
+}

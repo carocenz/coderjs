@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"
+        ></script>
+        <title>JavaScript</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>JavaScript con Caro</title>
-</head>
-<h1>Todas las cosas que necesitas para tu hogar en un solo lugar.</h1>
+    <body>
+        <h2>¿ Sos comprador o vendedor ?</h2>
+        <div>
+            <button id="shopper_btn" class="types_btn">COMPRADOR</button>
+            <button id="seller_btn" class="types_btn">VENDEDOR</button>
+        </div>
 
-<body>
-    <h1>Busca acá tus productos...</h1>
+        <div id="shopper_page">
+            <h1>Clickeá tus productos para agregarlos al carrito</h1>
+            <div id="products_list"> </div>
+        </div>
+        <div id="seller_page">
+            <section class="buscador style-scope ytd-searchbox" id="search-icon-legacy">
+                <input type="text" placeholder="Name" class="add_product" />
+                <input type="number" placeholder="Price" class="add_price" />
+                <input type="button" value="add" id="button" />
+            </section>
+            <section id="seller_list">
 
-    <section class="buscador style-scope ytd-searchbox" id="search-icon-legacy">
-        <input type="text" placeholder="Name" class="add_product">
-        <input type="number" placeholder="Price" class="add_price">
-        <input type="button" value="add" id="button">
-    </section>
-
-</body>
-<script src="js/script.js"></script>
+            </section>
+        </div>
+    </body>
+    <script src="js/script.js"></script>
 </html>
